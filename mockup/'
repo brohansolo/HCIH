@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>HCIH</title>
+<style>
+	html, body{
+		margin: 0;
+		padding: 0;
+		width: 100%;
+		height: 100%;
+	}
+
+/*
+	.cols-cont{
+		display: grid;
+		grid-template-columns: 20% 20% 20% 20% 20%;
+		height: 100vh;
+	}
+*/
+
+	.heading{
+		position: relative;
+		height: 75px;
+	}
+
+	.website-name{
+		height: 50px;
+		font-size: 200%;
+		margin-left: 25px;
+		position: absolute;
+		top: 12.5%;
+		border: 1px solid black;
+	}
+
+	.info {
+		height: 50px;
+	}
+
+
+	.cont{
+		height: calc(100% - 77px);
+	}
+
+	.cols-cont{
+		display: flex;
+		flex-flow: row nowrap;
+		height: 100%;
+	}
+	.cols-cont > .col {
+		width: 20%;
+		border: 1px solid black;
+		text-align: center;
+		height: 100%;
+		flex-flow: column nowrap;
+	}
+	/*
+	.blm{
+	  background-color: rgba(255, 255, 255, 0.8);
+	  border: 1px solid rgba(0, 0, 0, 0.8);
+	  padding: 20px;
+	  font-size: 30px;
+	  text-align: center;
+	}
+	*/
+
+</style>
+	
+</head>
+<body>
+	<div class="heading"> 
+		<span class="website-name">Website Name</span> 
+		<span class="info"> 
+			<a> about </a>
+			<a> contact </a>
+		</span>
+	</div>
+	<div class="cont">
+		<div class="cols-cont">
+			<div class="col" id="blm"> 
+					<p>Black Lives Matter</p> 
+			</div>
+			<div class="col" id="environment"> 
+				<p>Environment Conservation</p>
+			</div>
+			<div class="col" id="human-trafficking"> 
+				<p>Human Trafficking</p>
+			</div>
+			<div class="col" id="voter-access">
+				<p>Voter Access</p>
+			</div>
+			<div class="col" id="poverty-homelessness">
+				<p>Poverty &amp; Homelessness</p>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

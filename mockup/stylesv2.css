@@ -64,7 +64,7 @@
 		height: 100%;
 	}
 
-	.cols-cont > .col {
+.cols-cont > .col {
 		width: 20%;
 		text-align: center;
 		height: 100%;
@@ -73,7 +73,7 @@
         align-content: center;
 
 		/* border: 1px solid black; */
-        font-size: 275%;
+        font-size: 3vw;
 		/* transition: background-color 0.4s, height 0.4s; */
 		transition: 0.4s;
         transition-timing-function: ease;
@@ -92,7 +92,7 @@
         width: 90%;
         margin-left: auto;
         margin-right: auto;
-		margin-top: 135%;
+		margin-top: 55vh;
 		margin-bottom:0;
 		/* border: 1px solid black; */
 	}

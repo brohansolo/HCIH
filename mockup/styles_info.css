@@ -1,0 +1,202 @@
+* {
+	* margin: 0;
+	* padding: 0;
+}
+html, body{
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+
+@font-face{
+	font-family: 'quicksand';
+	src: url('../fonts/quicksand.ttf');
+}
+
+@font-face{
+	font-family: 'bebas-neue';
+	src: url('../fonts/bebas-neue.ttf');
+}
+
+@font-face{
+	font-family: 'source-sans-pro';
+	src: url('../fonts/source-sans-pr.ttf');
+}
+
+:root {
+	--poverty-color: #CAC585;
+	--poverty-color-unselected: rgba(202, 192, 133, 0.5);
+}
+
+
+/*------------------------*/
+/*-------- HEADING--------*/
+/*------------------------*/
+
+@media (min-width: 720px)
+{
+	.heading{
+		margin: 0;
+		padding: 0;
+		height: 80px;
+		overflow: hidden;
+		position: relative;
+		/* border-bottom: 5px solid black; */
+	}
+
+	.website-name{
+		height: 60px;
+		font-family: bebas-neue, serif;
+		width: 100%;
+		text-align: center;
+		font-size: 42pt; 
+		position: absolute;
+		top: 12.5%;
+		box-sizing: border-box;
+		/* border: 1px solid black; */
+	}
+
+	.website-name > a {
+		color: black;
+	}
+
+	.info {
+		/* height: 30px; */
+		top: 30%;
+		right: 0;
+		position: absolute;
+		text-align: center;
+		margin-right: 1vw;
+		
+		/* border: 1px solid black; */
+	}
+
+	.info > a {
+		text-decoration: none;
+		color: black;
+		margin-left: 1vw;
+		margin-right: 1vw;
+		margin-top: 10px;
+		font-family: source-sans-pro;
+		font-size: 20px;
+		/* border: 1px solid black; */
+	}
+
+	.info > a:hover {
+		text-decoration: underline;
+	}
+
+	.topic-heading {
+		height: 20vh;
+		background-color: #CAC585;
+		text-align: center;
+		box-sizing: border-box;
+	}
+	.topic-heading > img {
+		padding-top: 2.5vh;
+		width: 10vh;
+		height: 10vh;
+		margin: auto;
+	}
+	
+	.topic-heading-name {
+		font-family: quicksand, serif;
+		font-size: 4vh;
+		margin: auto;
+		cursor: default;
+	}
+
+@media(max-height: 540px) 
+	{
+		.topic-heading {
+			height: 108px;
+			background-color: #CAC585;
+			text-align: center;
+			box-sizing: border-box;
+		}
+		.topic-heading > img {
+			width: 54px;
+			height: 54px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		
+		.topic-heading-name {
+			font-family: quicksand, serif;
+			font-size: 21.6px;
+			margin-left: auto;
+			margin-right: auto;
+			cursor: default;
+		}
+	}
+
+
+
+/*----------------------*/
+/*-------- TABS --------*/
+/*----------------------*/
+
+	 /* Style the tab */
+.tabs {
+  overflow: hidden;
+  /* border: 1px solid #ccc; */
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+}
+
+
+/* Style the buttons that are used to open the tab content */
+.tabs div {
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+.tabs button {
+	float: left;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	/* padding: 14px 16px; */
+	width: 234px;
+	height: 70px;
+	transition: 0.3s;
+	background-color: var(--poverty-color-unselected); 
+	font-family: bebas-neue, serif;
+	font-size: 25pt;
+}
+
+/* Change background color of buttons on hover */
+.tabs button:hover {
+  /* background-color: #ddd; */
+	color: white;
+	background-color: var(--poverty-color);
+}
+
+/* Create an active/current tablink class */
+.tabs button.active {
+  background-color: var(--poverty-color);
+}
+
+/* Style the tab content */
+.tab-content {
+  padding: 6px 12px;
+  width: 66vw;
+  margin: auto;
+  font-family: source-sans-pro, serif;
+  /*border: 1px solid #ccc;*/
+}
+
+.tab-content h3 {
+	text-align: center;
+	font-size: 30pt;
+		
+}

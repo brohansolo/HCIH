@@ -5,41 +5,54 @@ html, body{
 	height: 100%;
 }
 
-/*
-	.cols-cont{
-		display: grid;
-		grid-template-columns: 20% 20% 20% 20% 20%;
-		height: 100vh;
-	}
-*/
+@font-face{
+	font-family: 'quicksand';
+	src: url('../fonts/quicksand.ttf');
+}
+
+@font-face{
+	font-family: 'bebas-neue';
+	src: url('../fonts/bebas-neue.ttf');
+}
+
+@font-face{
+	font-family: 'source-sans-pro';
+	src: url('../fonts/source-sans-pr.ttf');
+}
+
+
+
+/*------------------------*/
+/*-------- HEADING--------*/
+/*------------------------*/
 
 .heading{
 	margin: 0;
 	padding: 0;
 	position: relative;
 	height: 80px;
-	border-bottom: 5px solid black;
+	/* border-bottom: 5px solid black; */
 }
 
 .website-name{
-	height: 40px;
-	font-size: 200%; 
-	position: absolute;
-	top: 25%;
-	/* margin-left: 75px; */
+	height: 60px;
+	font-family: bebas-neue, serif;
 	width: 100%;
 	text-align: center;
+	font-size: 42pt; 
+	position: absolute;
+	top: 12.5%;
+	box-sizing: border-box;
 	/* border: 1px solid black; */
 }
 
 .info {
-	height: 20px;
-	/* width: 200px; */
-	top: 37.5%;
+	/* height: 30px; */
+	top: 30%;
 	right: 0;
 	position: absolute;
 	text-align: center;
-	margin-right: 20px;
+	margin-right: 1vw;
 	
 	/* border: 1px solid black; */
 }
@@ -47,8 +60,11 @@ html, body{
 .info > a {
 	text-decoration: none;
 	color: black;
-	margin: 20px;
-	font-size: 100%;
+	margin-left: 1vw;
+	margin-right: 1vw;
+	margin-top: 10px;
+	font-family: source-sans-pro;
+	font-size: 20px;
 	/* border: 1px solid black; */
 }
 
@@ -56,14 +72,31 @@ html, body{
 	text-decoration: underline;
 }
 
+/*------------------------*/
+/*-------- COLUMNS --------*/
+/*------------------------*/
+
 .cont{
-	height: calc(100% - 85px);
+	height: calc(100% - 80px);
 }
 
 .cols-cont{
 	display: flex;
 	flex-flow: row nowrap;
 	height: 100%;
+}
+
+.cat-inf {
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 25vh;
+	margin-bottom:0;
+	text-align: center;
+	/* border: 1px solid black; */
+}
+
+.cat-inf > img {
+	width: 128px;
 }
 
 .cols-cont > .col {
@@ -75,7 +108,8 @@ html, body{
 	align-content: center;
 
 	/* border: 1px solid black; */
-	font-size: 2.5vw;
+	font-size: 2.0vw;
+	font-family: quicksand, sans-serif;
 	/* transition: background-color 0.4s, height 0.4s; */
 	transition: 0.4s;
 	transition-timing-function: ease;
@@ -86,72 +120,61 @@ html, body{
 	/* text-decoration: underline; */
 	z-index: 1;
 	box-shadow: 0px 0px 20px black;
-	transform: translateY(-15px);
-	padding-bottom: 15px;
-}
-
-.cat-inf {
-	margin-left: auto;
-	margin-right: auto;
-	margin-top: 55vh;
-	margin-bottom:0;
-	text-align: center;
-	/* border: 1px solid black; */
+	transform: translateY(-5px);
+	padding-bottom: 5px;
 }
 
 #poverty-homelessness{
-	color: white;
-	background-color: coral;
+	color: black;
+	background-color: #cacf85;
 }
 
 #poverty-homelessness:hover{
-	color: white;
-	background-color: tomato;
+	color: black;
+	background-color: darkkhaki;
 }
 
 
 #human-trafficking{
-	color: darkslategrey;
-	background-color: #FFFE66;
+	/* color: black; */
+	background-color: #8cba80;
 }
 
 #human-trafficking:hover{
-	/* color: black; */
-	background-color: gold;
+	/* color: white; */
+	/* background-color: forestgreen; */
 }
 
 #environment{
 	color: white;
 	/* background-color: green; */
-	background-color: seagreen;
+	background-color: #658e9c;
 	/* //seagreen? */
 }
 
 #environment:hover{
 	color: white;
-	background-color: #00824b;
+	/* background-color: #00824b; */
 }
 
 #voter-access{
 	color: white;
 	/* background-color: indigo; */
-	background-color: rebeccapurple;
+	background-color: #4d5382;
 }
 
 #voter-access:hover{
-	background-color: indigo;
+	/* background-color: indigo; */
 }
 
 #blm{
 	color: white;
 	/* background-color: black; */
-	background-color: #333333;
+	background-color: #514663;
 }
 
 #blm:hover{
-	/* padding-left: 20px; */
-	/* padding-top: 20px; */
-	background-color: black;
+	/* background-color: black; */
 }
 
 

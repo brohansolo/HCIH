@@ -7,17 +7,17 @@ html, body{
 
 @font-face{
 	font-family: 'quicksand';
-	src: url('../fonts/quicksand.ttf');
+	src: url('fonts/quicksand.ttf');
 }
 
 @font-face{
 	font-family: 'bebas-neue';
-	src: url('../fonts/bebas-neue.ttf');
+	src: url('fonts/bebas-neue.ttf');
 }
 
 @font-face{
 	font-family: 'source-sans-pro';
-	src: url('../fonts/source-sans-pr.ttf');
+	src: url('fonts/source-sans-pr.ttf');
 }
 
 
@@ -135,35 +135,35 @@ html, body{
 }
 
 
-#human-trafficking{
+#environment{
 	/* color: black; */
 	background-color: #8cba80;
 }
 
-#human-trafficking:hover{
+#environment:hover{
 	/* color: white; */
 	/* background-color: forestgreen; */
 }
 
-#environment{
+#voter-access{
 	color: white;
 	/* background-color: green; */
 	background-color: #658e9c;
 	/* //seagreen? */
 }
 
-#environment:hover{
+#voter-access:hover{
 	color: white;
 	/* background-color: #00824b; */
 }
 
-#voter-access{
+#human-trafficking{
 	color: white;
 	/* background-color: indigo; */
 	background-color: #4d5382;
 }
 
-#voter-access:hover{
+#human-trafficking:hover{
 	/* background-color: indigo; */
 }
 

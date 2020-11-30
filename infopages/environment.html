@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Environment</title>
+	<link rel="stylesheet" href="styles_info.css">
+
+	<style>
+		.topic-heading{
+			background-color:var(--environment-color);
+			color:black;
+		}
+
+		.tabs button {
+			background-color:var(--environment-color-unselected);
+			color:black;
+		}
+
+		.tabs button:hover {
+			background-color: var(--environment-color);
+		}
+
+		.tabs button.active {
+			background-color: var(--environment-color);
+			color: white;
+		}
+	</style>
+
+
+	<script>
+
+		function openComponent(evt, component) {
+			// Declare all variables
+
+			var i, tabContent, tabLinks;
+			
+			// Get all elements with class="tab-content" and hide them
+			tabContent = document.getElementsByClassName("tab-content");
+			// tabContent is an array of all the tab-content elements
+			for (i = 0; i < tabContent.length; i++) { 
+				tabContent[i].style.display = "none";
+			}
+
+			// Get all elements with class = "tab-links" and remove the class "active"
+			tabLinks = document.getElementsByClassName("tab-links")
+			for (i = 0; i < tabLinks.length; i++) {
+				tabLinks[i].className = tabLinks[i].className.replace(" active", "");
+			}
+
+			// Show the current tab, and add an "active" class to the buttom that opened the tab
+			document.getElementById(component).style.display = "block";
+			evt.currentTarget.className += " active";
+		}
+	
+		document.addEventListener('DOMContentLoaded', function() { 
+				document.getElementById("Action-button").click();
+			});
+	
+	</script>
+
+</head>
+<body>
+	<div class="heading"> 
+		<span class="website-name">
+			<a href="../index.html"> <b>The Heart to Help</b> </a>
+		</span> 
+		<span class="info"> 
+			<a href="about.html">About</a>
+			<a href="contact.html">Contact</a>
+		</span>
+	</div>
+
+	<!-- Topic Heading -->
+	<div id="environment">
+		<div class="topic-heading" >
+			<img src="../icons/environment.png">
+			<p class="topic-heading-name">Environmental Conservation</p>
+		</div>
+	</div>
+
+	<!-- Tab Links -->
+	<div class="tabs" id="environment">
+		<div>
+			<button class = "tab-links" id="Action-button" onclick="openComponent(event, 'Action')">Action</button>
+		</div>
+
+		<div>
+			<button class = "tab-links" onclick="openComponent(event, 'Facts')">The Facts</button>
+		</div>
+
+		<div>
+			<button class = "tab-links" onclick="openComponent(event, 'News')">Recent Events</button>
+		</div>
+
+		<div>
+			<button class = "tab-links" onclick="openComponent(event, 'Links')">Links + More</button>
+		</div>
+	</div>
+
+	<!-- Tab Content -->
+	<div class="tab-content" id="Action">
+		<h3>How can I help?</h3>
+
+		<p> Voluptatem velit et vero porro quam velit minima mollitia. Dolorum sint natus id eveniet consectetur animi voluptatem eveniet. Veritatis aut eos dolor voluptas dolor porro. </p>
+
+		<p> Voluptas id natus eius. Libero distinctio rerum eligendi illum minima voluptates fugiat rem. Possimus molestias et atque placeat nam mollitia laborum omnis. Voluptas magnam rerum asperiores ex repellendus rerum. Nulla facere accusamus est illum et exercitationem illum accusantium. Tempore facere nisi qui aut porro nesciunt. </p>
+		<p>
+		Ut consequatur facilis temporibus. Aut architecto minus est iure ut maxime. Quibusdam non autem aut quidem beatae quo qui veritatis. Veritatis quidem qui et est error dolor. Explicabo delectus est ut sunt dicta earum velit. Ipsam voluptas dolore quidem voluptas id repudiandae ratione. </p>
+
+		<p>
+		Excepturi id sequi omnis minima fugiat unde veniam. Blanditiis qui ut sunt sit aut. Sapiente repellendus adipisci et non eos omnis aut.
+		</p>
+		
+		<p>
+		Consequatur est eum veniam perspiciatis possimus deserunt voluptate facere. Fugiat iure repudiandae ea blanditiis repellendus. Iusto est at magnam amet voluptatem. Ut dignissimos similique id inventore sint molestias quos.
+		</p>
+
+	</div>
+
+	<div class="tab-content" id="Facts">
+		<h3> Why is this an issue? What are the facts? </h3>
+	</div>
+
+	<div class="tab-content" id="News">
+		<h3> What's happening right now? </h3>
+	</div>
+
+	<div class="tab-content" id="Links">
+		<h3> How can I follow this issue and find out more? </h3>
+	</div>
+
+
+
+</body>
+</html>

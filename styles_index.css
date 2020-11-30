@@ -20,6 +20,20 @@ html, body{
 	src: url('fonts/source-sans-pr.ttf');
 }
 
+:root {
+	--poverty-homelessness-color: #CAC585;
+	--poverty-homelessness-color-unselected: rgba(202, 192, 133, 0.5);
+	--environment-color: #8cba80;
+	--environment-color-unselected: rgba(140, 186, 128, 0.5);
+	--voter-access-color: rgba(101, 142, 156, 1);
+	--voter-access-color-unselected: rgba(101, 142, 156, 0.5);
+	--human-trafficking-color: rgba(77, 83, 130, 1); 
+	--human-trafficking-color-unselected: rgba(77, 83, 130, 0.5); 
+	--racial-injustice-color: rgba(81, 70, 99, 1);
+	--racial-injustice-color-unselected: rgba(81, 70, 99, 0.5);
+}
+
+
 
 
 /*------------------------*/
@@ -80,7 +94,9 @@ html, body{
 /*------------------------*/
 
 .cont{
-	height: calc(100% - 80px);
+	height: calc(100vh - 80px);
+	margin: 0;
+	padding: 0;
 }
 
 .cols-cont{
@@ -98,98 +114,108 @@ html, body{
 	/* border: 1px solid black; */
 }
 
-.cat-inf > img {
+.cat-inf > img.icon {
 	width: 128px;
 }
 
-.cols-cont > .col {
-	width: 20%;
-	text-align: center;
+.col {
+	display: block;
+	width: 20vw;
 	height: 100%;
 	flex-flow: column nowrap;
 	justify-content: center;
 	align-content: center;
-
 	/* border: 1px solid black; */
+
 	font-size: 2.0vw;
 	font-family: quicksand, sans-serif;
+	text-align: center;
+	text-decoration: none;
 	/* transition: background-color 0.4s, height 0.4s; */
 	transition: 0.4s;
 	transition-timing-function: ease;
+	position: relative;
 
 }
 
-	.col:hover {
+.col { overflow: hidden; }
+
+.image {
+	height: 100%;	
+	display: none;
+}
+
+.cat-inf > p {
+	z-index: 1;
+}
+
+.col:hover {
 		/* text-decoration: underline; */
 		z-index: 1;
 		box-shadow: 0px 0px 20px black;
 		transform: translateY(-5px);
 		padding-bottom: 5px;
+		color: white;
 	}
+
+.col:hover > .image {
+	position: absolute;
+	display: block;
+	z-index: -1;
+	transition: 0.3s;
 }
 
-#poverty-homelessness{
+
+
+#poverty-homelessness.col{
 	color: black;
 	background-color: #cacf85;
 }
 
-#poverty-homelessness:hover{
-	color: black;
-	background-color: darkkhaki;
+#poverty-homelessness.col:hover{
+	color: white;
+	/* background-color: darkkhaki; */
 }
 
 
-#environment{
-	/* color: black; */
+#environment.col{
+	color: black;
 	background-color: #8cba80;
 }
 
-#environment:hover{
-	/* color: white; */
+#environment.col:hover{
+	color: black;
 	/* background-color: forestgreen; */
 }
 
-#voter-access{
+#voter-access.col{
 	color: white;
 	/* background-color: green; */
 	background-color: #658e9c;
 	/* //seagreen? */
 }
 
-#voter-access:hover{
+#voter-access.col:hover{
 	color: white;
 	/* background-color: #00824b; */
 }
 
-#human-trafficking{
+#human-trafficking.col{
 	color: white;
 	/* background-color: indigo; */
 	background-color: #4d5382;
 }
 
-#human-trafficking:hover{
+#human-trafficking.col:hover{
 	/* background-color: indigo; */
 }
 
-#blm{
+#blm.col{
 	color: white;
 	/* background-color: black; */
 	background-color: #514663;
 }
 
-#blm:hover{
+#blm.col:hover{
 	/* background-color: black; */
 }
-
-
-
-/*
-.blm{
-	background-color: rgba(255, 255, 255, 0.8);
-	border: 1px solid rgba(0, 0, 0, 0.8);
-	padding: 20px;
-	font-size: 30px;
-	text-align: center;
-}
-*/
-

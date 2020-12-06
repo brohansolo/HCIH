@@ -99,8 +99,6 @@ a {
 		margin-bottom: 27px;
 	}
 
-	.home-link
-
 }
 
 
@@ -158,9 +156,8 @@ a {
 
 
 /* Style the tab content */
-
+ 
  .tab-content {
-	padding: 6px 12px;
 	width: 66vw;
 	margin: auto;
 	font-family: source-sans-pro, serif;
@@ -171,4 +168,4 @@ a {
 	text-align: center;
 	font-size: 30pt;
 	margin-bottom: 30px;
-}
+} 

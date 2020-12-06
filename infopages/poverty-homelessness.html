@@ -3,7 +3,8 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Poverty and Homelessness</title>
-	<link rel="stylesheet" href="styles_info.css">
+	<!-- <link rel="stylesheet" href="styles_info.css"> -->
+	<link rel="stylesheet" href="styles_poverty-homelessness.css">
 
 	<style>
 		.topic-heading{
@@ -76,7 +77,9 @@
 		</div>
 
 		<!-- Tab Links -->
+
 		<div class="tabs" id="poverty-homelessness">
+			<a class="home-link" href="../index.html"> &lt; Home </a>
 			<div>
 				<button class = "tab-links" id="Action-button" onclick="openComponent(event, 'Action')">Action</button>
 			</div>
@@ -96,21 +99,67 @@
 
 	<!-- Tab Content -->
 	<div class="tab-content" id="Action">
-		<h3>How can I help?</h3>
 
-		<p> Voluptatem velit et vero porro quam velit minima mollitia. Dolorum sint natus id eveniet consectetur animi voluptatem eveniet. Veritatis aut eos dolor voluptas dolor porro. </p>
+		<div class="content-div" id="donate">
 
-		<p> Voluptas id natus eius. Libero distinctio rerum eligendi illum minima voluptates fugiat rem. Possimus molestias et atque placeat nam mollitia laborum omnis. Voluptas magnam rerum asperiores ex repellendus rerum. Nulla facere accusamus est illum et exercitationem illum accusantium. Tempore facere nisi qui aut porro nesciunt. </p>
-		<p>
-		Ut consequatur facilis temporibus. Aut architecto minus est iure ut maxime. Quibusdam non autem aut quidem beatae quo qui veritatis. Veritatis quidem qui et est error dolor. Explicabo delectus est ut sunt dicta earum velit. Ipsam voluptas dolore quidem voluptas id repudiandae ratione. </p>
+			<p id="donate-title">Donate</p>
 
-		<p>
-		Excepturi id sequi omnis minima fugiat unde veniam. Blanditiis qui ut sunt sit aut. Sapiente repellendus adipisci et non eos omnis aut.
-		</p>
-		
-		<p>
-		Consequatur est eum veniam perspiciatis possimus deserunt voluptate facere. Fugiat iure repudiandae ea blanditiis repellendus. Iusto est at magnam amet voluptatem. Ut dignissimos similique id inventore sint molestias quos.
-		</p>
+			<div id="donate-actions">
+
+				<div class="donate-action" id="donate-food">
+					<img src="../images/poverty-homelessness/food.svg"
+						alt="Woman with some food in a cart"> 
+					<h3>Food</h3>
+
+					<div class="donate-content"> 
+
+						<a href=https://www.feedingamerica.org/hunger-blog/what-donate-food-bank-and-what-avoid>
+							<strong>Donate to a Local Food Pantry</strong>
+						</a>
+
+						<p>Any of the following items are great options:</p>
+
+						<ul>
+							<li>Pasta (whole grain preferred)</li>
+							<li>Rice (brown rice preferred) </li>
+							<li>Peanut Butter</li>
+							<li>Canned Soup</li>
+							<li>Canned Fruit</li>
+							<li>Canned Vegetables</li>
+							<li>Canned Beans</li>
+						</ul>
+
+						<a id="find-food-pantry" href="https://www.google.com/search?q=food%20banks%20near%20me" >
+							Find your local food pantry <strong>here</strong>.
+						</a>
+
+					</div>
+
+				</div>
+
+				<div class="donate-action" id="donate-cash">
+					<img src="../images/poverty-homelessness/wallet.svg"
+						alt="Multiple small people taking cash out of big wallet">
+					<h3>Cash</h3>
+				</div>
+
+				<div class="donate-action" id="donate-items">
+					<img src="../images/poverty-homelessness/shop.svg"
+						alt="Woman with a bag of items">
+					<h3>Clothes, Shoes, &amp; Essentials </h3>
+				</div>
+			</div>
+
+		</div>
+
+		<div class="content-div" id="each-dollar">
+			<p id="each-dollar-title">Each Dollar Counts</p>
+			<img src="../images/poverty-homelessness/money.svg" 
+				alt="Small man putting coin in piggy bank">
+		</div>
+
+
+		</div>
 
 	</div>
 

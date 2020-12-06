@@ -16,6 +16,8 @@ a {
 	color: black;
 }
 
+
+
 .topic-heading {
 	height: 20vh;
 	/* background-color: #CAC585; */
@@ -46,6 +48,7 @@ a {
 		box-sizing: border-box;
 	}
 	.topic-heading > img {
+		padding-top: 13.5px;
 		width: 54px;
 		height: 54px;
 		margin-left: auto;
@@ -62,21 +65,48 @@ a {
 }
 
 
-
 /*----------------------*/
 /*-------- TABS --------*/
 /*----------------------*/
 
 /* Style the tab */
 .tabs {
+
 	overflow: hidden;
 	margin-top: 5vh;
 	margin-bottom: 5vh;
 	display: flex;
 	flex-flow: row nowrap;
 	justify-content: center;
+	position: relative;
 }
 
+.home-link {
+	font-family: bebas-neue, serif;
+	font-size: 25pt;
+	position: absolute;
+	left: 5vw;
+	font-size: 25pt;
+	color: black;
+	top: 50%;
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+
+@media(min-width:540px) {
+	.tabs{
+		margin-top: 27px;
+		margin-bottom: 27px;
+	}
+
+	.home-link
+
+}
+
+
+.home-link:hover{
+	text-decoration: underline;
+}
 /* Style the buttons that are used to open the tab content */
 .tabs div {
 	margin-left: 10px;
@@ -84,7 +114,6 @@ a {
 }
 
 .tabs button {
-	float: left;
 	border: none;
 	outline: none;
 	cursor: pointer;
@@ -129,7 +158,8 @@ a {
 
 
 /* Style the tab content */
-.tab-content {
+
+ .tab-content {
 	padding: 6px 12px;
 	width: 66vw;
 	margin: auto;

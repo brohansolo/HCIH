@@ -1,0 +1,85 @@
+@import url("styles_info.css");
+
+#Action {
+    width: 100%;
+}
+
+#donate {
+    background-color: #F2F2F2;
+    position: relative;
+}
+
+#donate-title {
+    font-family: quicksand, sans-serif, arial;
+    font-weight: bold;
+    font-size: 48pt;
+    color: var(--poverty-homelessness-color);
+    margin-left: 10vw;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+#donate-actions{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+}
+
+.donate-action { 
+    padding: 30px;
+    padding-bottom: 50px;
+    width: 25vw;
+    height: 900px;
+    /* border: 1px solid black; */
+    position: relative;
+    /* border: 1px solid black; */
+    
+}
+
+.donate-action img {
+    height: 50%;
+    width: 100%; 
+    /* border: 1px dotted black; */
+}
+
+.donate-action h3 {
+    text-decoration: none;
+    font-style: none;
+    margin: 30px;
+    font-family: quicksand, sans-serif, arial;
+    font-weight: bold;
+    font-size: 28.13pt;
+    text-align: center;
+
+}
+
+.donate-content{
+    margin-top: 30px;
+    font-family: source-sans-pro, sans-serif, arial;
+    font-size: 18pt;
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+}
+
+.donate-content p {
+    margin-top: 5px;
+}
+
+.donate-content #find-food-pantry {
+    margin-top: 5px;
+}
+
+
+.donate-content ul {
+    list-style-position: inside;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+/* .donate-action p ul li{
+    font-family: source-sans-pro, sans-serif, arial;
+    font-size: 18pt;
+    width: 100%;
+} */
+

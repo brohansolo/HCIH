@@ -5,6 +5,11 @@ html, body{
 	height: 100%;
 }
 
+a {
+	text-decoration: none;
+	color: black;
+}
+
 @font-face{
 	font-family: 'quicksand';
 	src: url('fonts/quicksand.ttf');
@@ -34,7 +39,7 @@ html, body{
 }
 
 /*========== BEGINNING OF DESKTOP INTERFACE ==========*/
-@media (min-width: 960px)
+@media (min-width: 729px)
 {
 
 /*------------------------*/
@@ -51,6 +56,7 @@ html, body{
 	}
 
 	.website-name{
+		text-decoration: none;
 		height: 60px;
 		font-family: bebas-neue, sans-serif, arial;
 		width: 100%;
@@ -60,7 +66,11 @@ html, body{
 		top: 12.5%;
 		box-sizing: border-box;
 		cursor: default;
-		/* border: 1px solid black; */
+		color: black;
+	}
+
+	.website-name a:hover{
+		text-decoration: underline;
 	}
 
 	.info {
@@ -69,7 +79,7 @@ html, body{
 		right: 0;
 		position: absolute;
 		text-align: center;
-		margin-right: 1vw;
+		margin-right: 1.25vw;
 		
 		/* border: 1px solid black; */
 	}
@@ -77,8 +87,8 @@ html, body{
 	.info > a {
 		text-decoration: none;
 		color: black;
-		margin-left: 1vw;
-		margin-right: 1vw;
+		margin-left: 1.25vw;
+		margin-right: 1.25vw;
 		margin-top: 10px;
 		font-family: source-sans-pro, sans-serif, arial;
 		font-size: 18pt;
@@ -131,7 +141,7 @@ html, body{
 	font-family: quicksand, sans-serif;
 	text-align: center;
 	text-decoration: none;
-	transition: 0.4s;
+	/* transition: 0.2s; */
 	transition-timing-function: ease;
 	position: relative;
 	
@@ -146,11 +156,12 @@ html, body{
 .col:hover {
 		/* text-decoration: underline; */
 		z-index: 1;
-		box-shadow: 0px 0px 20px black;
+		/* box-shadow: 0px 0px 20px black;
 		transform: translateY(-5px);
-		padding-bottom: 5px;
-		color: white;
-}
+		padding-bottom: 5px;*/
+
+		color: white; 
+	}
  
 .cat-image {
 	height: 100%;	
@@ -164,8 +175,6 @@ html, body{
 	display: block;
 	transition: 0.3s;
 }
-
-
 
 #poverty-homelessness.col {
 	color: black;
@@ -227,7 +236,7 @@ html, body{
 
 /*========== BEGINNING OF MOBILE INTERFACE ==========*/
 
-@media (max-width: 959px)
+@media (max-width: 728px)
 {
 
 /*------------------------*/
@@ -235,52 +244,54 @@ html, body{
 /*------------------------*/
 
 
-	.heading{
-		margin: 0;
-		padding: 0;
-		position: relative;
-		height: 80px;
-		/* border-bottom: 5px solid black; */
-	}
+.heading{
+	margin: 0;
+	padding: 0;
+	position: relative;
+	height: 80px;
+	/* border-bottom: 5px solid black; */
+}
 
-	.website-name{
-		height: 60px;
-		font-family: bebas-neue, serif;
-		width: 100%;
-		text-align: center;
-		font-size: 42pt; 
-		position: absolute;
-		top: 12.5%;
-		box-sizing: border-box;
-		cursor: default;
-		/* border: 1px solid black; */
-	}
+.website-name{
+	height: 60px;
+	font-family: bebas-neue, serif;
+	width: 100%;
+	text-align: center;
+	font-size: 42pt; 
+	position: absolute;
+	top: 12.5%;
+	box-sizing: border-box;
+	cursor: default;
+	/* border: 1px solid black; */
+}
 
-	.info {
-		/* height: 30px; */
-		top: 30%;
-		right: 0;
-		position: absolute;
-		text-align: center;
-		margin-right: 1vw;
-		
-		/* border: 1px solid black; */
-	}
+.info {
+	/* height: 30px; */
+	top: 30%;
+	right: 0;
+	position: absolute;
+	text-align: center;
+	margin-right: 1vw;
+	
+	/* border: 1px solid black; */
+}
 
-	.info > a {
-		text-decoration: none;
-		color: black;
-		margin-left: 1vw;
-		margin-right: 1vw;
-		margin-top: 10px;
-		font-family: source-sans-pro;
-		font-size: 20px;
-		/* border: 1px solid black; */
-	}
+.info > a {
+	text-decoration: none;
+	color: black;
+	margin-left: 1vw;
+	margin-right: 1vw;
+	margin-top: 10px;
+	font-family: source-sans-pro;
+	font-size: 20px;
+	/* border: 1px solid black; */
+	display: none;
+}
 
-	.info > a:hover {
-		text-decoration: underline;
-	}
+.info > a:hover {
+	text-decoration: underline;
+	display: none;
+}
 
 /*------------------------*/
 /*-------- COLUMNS --------*/
@@ -317,7 +328,6 @@ html, body{
 
 .cat-inf {
 
-
 	display: flex;
 	flex-flow: row-reverse nowrap;
 	justify-content: space-between;
@@ -325,14 +335,11 @@ html, body{
 	margin-left: 5vh;
 	margin-right: 10vh;
 
-
 }
 
 .cat-icon {
-	/* border: 1px solid black; */
 	margin: 20px;
-	height: 160px; 
-
+	height: 160px;
 }
 
 

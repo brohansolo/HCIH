@@ -1,5 +1,8 @@
 @import url("styles_info.css");
 
+
+/*------------ Action -----------*/
+
 #Action {
     width: 100%;
 }
@@ -75,9 +78,157 @@
     margin-left: 10px;
     margin-top: 5px;
 }
-/* .donate-action p ul li{
-    font-family: source-sans-pro, sans-serif, arial;
-    font-size: 18pt;
-    width: 100%;
-} */
 
+/*--- Donation Amounts ---*/
+
+#each-dollar {
+    position: relative;
+}
+
+#each-dollar-title {
+    font-family: quicksand, sans-serif, arial;
+    font-size: 36pt;
+    font-weight: bold;
+    position: absolute;
+    margin-top: 50px;
+    margin-left: 70vw;
+    
+}
+
+#each-dollar img {
+    width: 30vw;
+    margin: 100px 100px;
+}
+
+.user-donation {
+    position: absolute;
+    top: 30%;
+    right: 40%;
+
+    font-family: source-sans-pro, sans-serif, arial;
+    font-size: 24pt;
+    display: inline-block;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+form {
+    display: inline;
+}
+
+input {
+    border: none;
+    border-bottom: 1px solid black;
+    background-color: var(--poverty-homelessness-color-unselected);
+    white-space: none;
+    font-family: source-sans-pro, sans-serif, arial;
+    font-weight: bold;
+    font-size: 30pt;
+    width: 190px;
+}
+
+#donation-output {
+    position: absolute;
+    top: 45%;
+    right: 20%;
+    font-family: source-sans-pro, sans-serif, arial;
+    font-size: 24pt;
+}
+
+#donation-out {
+    font-size: 30pt;
+    font-weight: bold;
+}
+
+#action-call {
+    position: absolute;
+    top: 70%;
+    font-family: source-sans-pro, sans-serif, arial;
+    font-size: 40pt;
+    right: 20%;
+}
+
+#action-call a {
+    background-color: var(--poverty-homelessness-color-unselected);
+    padding: 10px 20px;
+    font-weight: bold;
+}
+
+#action-call a:hover {
+    background-color: var(--poverty-homelessness-color);
+
+}
+
+
+
+/*------------ Facts -----------*/
+
+#Facts {
+    width: 100%;
+}
+
+#Facts > h3 {
+	text-decoration: none;
+    font-size: 30pt;
+    margin-left: 10vw;
+    margin-top: 50px;
+    font-family: quicksand, sans-serif, arial;
+
+}
+
+#Facts h4 {
+    text-decoration: none;
+    font-size: 20pt;
+    margin-left: 10vw;
+    margin-top: 10px;
+    font-family: quicksand, sans-serif, arial;
+}
+
+.slideshow-container {
+    position: relative;
+}
+
+
+.next-slideshow {
+    text-decoration: none;
+    padding: 20px 50px;
+    color: black;
+    background-color: var(--poverty-homelessness-color-unselected);
+    font-family: bebas-neue, sans-serif, arial;
+    font-size: 20pt;
+    transition: 0.2s;
+    position: absolute;
+    bottom: 20%;
+    right: 20%;
+}
+
+.next-slideshow:hover {
+    background-color: var(--poverty-homelessness-color);
+}
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 0.5s;
+    animation-name: fade;
+    animation-duration: 0.5s;   
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .0}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .0}
+  to {opacity: 1}
+}

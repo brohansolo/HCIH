@@ -85,7 +85,7 @@ a {
 	font-family: bebas-neue, serif;
 	font-size: 25pt;
 	position: absolute;
-	left: 5vw;
+	left: 2.5vw;
 	font-size: 25pt;
 	color: black;
 	top: 50%;
@@ -115,8 +115,11 @@ a {
 	border: none;
 	outline: none;
 	cursor: pointer;
-	width: 234px;
-	height: 70px;
+	/* width: 234px; */
+	width: 12vw;
+	padding-top: 11.5px;
+	padding-bottom: 11.5px;
+	/* height: 70px; */
 	transition: 0.3s;
 	font-family: bebas-neue, serif;
 	font-size: 25pt;
@@ -163,9 +166,10 @@ a {
 	font-family: source-sans-pro, serif;
 }
 
-.tab-content h3 {
+/* .tab-content h3 {
+
 	text-decoration: none;
 	text-align: center;
 	font-size: 30pt;
 	margin-bottom: 30px;
-} 
+}  */

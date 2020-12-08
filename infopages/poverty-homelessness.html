@@ -51,11 +51,56 @@
 			document.getElementById(component).style.display = "block";
 			evt.currentTarget.className += " active";
 		}
+
+		// Changing Slideshow
+
+			var slideIndex = 1;
+
+			// next/previous controls
+			function plusSlides(n) {
+				showSlides(slideIndex += n);
+			}
+
+			//thumbnail image controls
+			function currentSlide(n) {
+				showSlides(slideIndex = n);
+			}
+
+			function showSlides(n) {
+				var i;
+				var slides = document.getElementsByClassName("mySlides");
+				if (n > slides.length) {slideIndex = 1}
+				for (i = 0; i < slides.length; i++) {
+					slides[i].style.display = "none";
+				}
+
+				slides[slideIndex-1].style.display = "block";
+			}
+
+
 	
 		document.addEventListener('DOMContentLoaded', function() { 
 				document.getElementById("Action-button").click();
+				showSlides(0);
 			});
-	
+
+	function donationVal(val) {
+
+						val = parseInt(val);
+
+						if (val < 0 || isNaN(val))
+						{
+							document.getElementById("donation-out").innerHTML = 0;
+							document.getElementById("exclaim").style.display = "none";
+						}
+						else
+						{
+							document.getElementById("donation-out").innerHTML = val*12;
+							document.getElementById("exclaim").style.display = "inline";
+						}
+
+					}
+		
 	</script>
 
 </head>
@@ -85,15 +130,15 @@
 			</div>
 
 			<div>
-				<button class = "tab-links" onclick="openComponent(event, 'Facts')">The Facts</button>
+				<button class = "tab-links"  onclick="openComponent(event, 'Facts')">Facts</button>
 			</div>
 
 			<div>
-				<button class = "tab-links" onclick="openComponent(event, 'News')">Recent Events</button>
+				<button class = "tab-links" onclick="openComponent(event, 'News')">News</button>
 			</div>
 
 			<div>
-				<button class = "tab-links" onclick="openComponent(event, 'Links')">Links + More</button>
+				<button class = "tab-links" onclick="openComponent(event, 'Links')">Links</button>
 			</div>
 		</div>
 
@@ -156,15 +201,54 @@
 			<p id="each-dollar-title">Each Dollar Counts</p>
 			<img src="../images/poverty-homelessness/money.svg" 
 				alt="Small man putting coin in piggy bank">
-		</div>
+			<div class="user-donation"> I want to give $ 
+				<form>
+					<input type="number" value="10" name="donation-amt" id="to-donate"
+						oninput="donationVal(getElementById('to-donate').value)">
+				</form>
+				<br>
+			</div>
 
+			<div id="donation-output">
+				<span>You would be donating: </span> 
+					<span id="donation-out"></span> 
+				<span><strong>lbs</strong> of food</span>
+				<span id="exclaim" style="display:none; white-space: nowrap;">!</span>
+			</div>
 
+			<div id="action-call">
+				<span class= "tagline">Don't wait!</span> 
+				<a href="https://secure.feedingamerica.org/site/Donation2"> Donate!</a>
+			</div>
 		</div>
 
 	</div>
 
 	<div class="tab-content" id="Facts">
-		<h3> Why is this an issue? What are the facts? </h3>
+		<h3> The Cycle of Poverty </h3>
+		<h4> (Click Next to See More) </h4> 
+
+		<!-- Slideshow Container -->
+		<div class="slideshow-container">
+			<!-- Images -->
+			<div class="mySlides fade">
+				<img src="../images/poverty-homelessness/facts/Background.png" style="width:100%">
+			</div>
+
+			<div class="mySlides fade">
+				<img src="../images/poverty-homelessness/facts/School.png" style="width:100%">
+			</div>
+
+			<div class="mySlides fade">
+				<img src="../images/poverty-homelessness/facts/College.png" style="width:100%">
+			</div>
+
+			<div class="mySlides fade">
+				<img src="../images/poverty-homelessness/facts/Family.png" style="width:100%">
+			</div>
+
+			<a class="next-slideshow" onclick="plusSlides(1)"> Next &#10095;</a>
+		</div>
 	</div>
 
 	<div class="tab-content" id="News">

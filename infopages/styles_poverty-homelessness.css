@@ -33,14 +33,12 @@
     padding-bottom: 50px;
     width: 25vw;
     position: relative;
-    /* border: 1px solid black; */
-    
 }
 
 .donate-action img {
-    height: 50%;
+
+    height: 30vh; 
     width: 100%; 
-    /* border: 1px dotted black; */
 }
 
 .donate-action h3 {
@@ -91,8 +89,7 @@
     font-weight: bold;
     position: absolute;
     margin-top: 50px;
-    margin-left: 70vw;
-    
+    margin-left: 60vw;
 }
 
 #each-dollar img {
@@ -103,7 +100,7 @@
 .user-donation {
     position: absolute;
     top: 30%;
-    right: 40%;
+    left: 39%;
 
     font-family: source-sans-pro, sans-serif, arial;
     font-size: 24pt;
@@ -140,7 +137,7 @@ input {
 #donation-output {
     position: absolute;
     top: 45%;
-    right: 20%;
+    left: 50%;
     font-family: source-sans-pro, sans-serif, arial;
     font-size: 24pt;
 }
@@ -153,9 +150,10 @@ input {
 #action-call {
     position: absolute;
     top: 70%;
+    left: 50%;
+
     font-family: source-sans-pro, sans-serif, arial;
     font-size: 40pt;
-    right: 20%;
 }
 
 #action-call a {

@@ -79,11 +79,6 @@
 
 
 	
-		document.addEventListener('DOMContentLoaded', function() { 
-				document.getElementById("Action-button").click();
-				showSlides(0);
-			});
-
 	function donationVal(val) {
 
 						val = parseInt(val);
@@ -100,6 +95,13 @@
 						}
 
 					}
+
+		document.addEventListener('DOMContentLoaded', function() { 
+				document.getElementById("Action-button").click();
+				donationVal(10);
+			});
+
+
 		
 	</script>
 

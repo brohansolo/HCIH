@@ -36,7 +36,6 @@
 }
 
 .donate-action img {
-
     height: 30vh; 
     width: 100%; 
 }
@@ -88,19 +87,20 @@
     font-size: 36pt;
     font-weight: bold;
     position: absolute;
-    margin-top: 50px;
-    margin-left: 60vw;
+    /* margin-top: 10%; */
+    top: 10%;
+    left: 50%;
 }
 
 #each-dollar img {
     width: 30vw;
-    margin: 100px 100px;
+    margin: 100px 200px;
 }
 
 .user-donation {
     position: absolute;
     top: 30%;
-    left: 39%;
+    left: 52.5%;
 
     font-family: source-sans-pro, sans-serif, arial;
     font-size: 24pt;
@@ -137,7 +137,7 @@ input {
 #donation-output {
     position: absolute;
     top: 45%;
-    left: 50%;
+    left: 55%;
     font-family: source-sans-pro, sans-serif, arial;
     font-size: 24pt;
 }
@@ -150,10 +150,10 @@ input {
 #action-call {
     position: absolute;
     top: 70%;
-    left: 50%;
+    left: 60%;
 
     font-family: source-sans-pro, sans-serif, arial;
-    font-size: 40pt;
+    font-size: 30pt;
 }
 
 #action-call a {
@@ -164,10 +164,7 @@ input {
 
 #action-call a:hover {
     background-color: var(--poverty-homelessness-color);
-
 }
-
-
 
 /*------------ Facts -----------*/
 

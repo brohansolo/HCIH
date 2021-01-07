@@ -1,0 +1,27 @@
+#voter-registration-status {
+	border: 1px solid black;
+	width: 60%;
+	margin: auto;
+}
+
+
+.vrs-subdiv {
+    position: relative;
+    width: 100%;
+    height: 200px;
+}
+
+.vrs-b1 {
+    top: 50%;
+    position: absolute;
+}
+
+.vrs-b2 {
+    top: 50%;
+    position: absolute;
+}
+
+.vrs-i1 {
+    position: absolute;
+    right: 20%;
+}

@@ -158,16 +158,145 @@ a {
 
 /* Style the tab content */
  
- .tab-content {
+.tab-content {
 	width: 66vw;
 	margin: auto;
 	font-family: source-sans-pro, serif;
 }
 
-/* .tab-content h3 {
+#Action {
+	width: 100%;
+}
 
-	text-decoration: none;
-	text-align: center;
-	font-size: 30pt;
-	margin-bottom: 30px;
-}  */
+.grey-background {
+	background-color: #F5F5F5;
+}
+
+.action-subheading {
+	font-family: source-sans-pro, Arial, Helvetica, sans-serif;
+	font-size: 22.5px;
+}
+
+.reg-button {
+	padding: 20px;
+}
+
+
+
+
+/* ================= */
+/* ======Links====== */
+/* ================= */
+
+#Links {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+.links-grey-background {
+	background-color: #F5F5F5;
+}
+
+.links-content {
+	position: relative;
+	width: 60%;
+	margin: 0 20%;
+	padding-top: 40px;
+	padding-bottom: 80px;
+}
+
+.action-heading, .links-heading {
+	font-family: quicksand, Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	font-size: 36px;
+	margin: 40px 0;
+}
+
+.instagram-accounts-heading, .websites-heading {
+	font-family: quicksand, Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	font-size: 22.5px;
+	padding-bottom: 20px;
+	border-bottom: 3px solid ;
+}
+
+.instagram-links {
+	padding-top: 20px;
+	list-style-type: none;
+}
+
+.instagram-links li {
+	font-family: source-sans-pro , Arial, Helvetica, sans-serif;
+	font-size: 18px;
+}
+
+.website-links {
+	list-style-position: inside;
+	margin-top: 20px;
+	font-family: source-sans-pro, Arial, Helvetica, sans-serif;
+	font-size: 20px;
+}
+
+.website-link {
+	margin: 20px 0;
+}
+
+.website-link a {
+	margin-left: 5px;
+	color: #0761B2;
+	text-decoration: underline;
+}
+
+.website-link p {
+	margin: 5px 0;
+}
+
+
+/*  COLORS */
+
+.poverty-homelessness-text-color {
+	color: var(--poverty-homelessness-color);
+}
+
+.poverty-homelessness-border-color {
+	border-color: var(--poverty-homelessness-color);
+}
+
+.environment-text-color {
+	color: var(--environment-color);
+}
+
+.environment-border-color {
+	border-color: var(--environment-color);
+}
+
+.voter-access-text-color {
+	color: var(--voter-access-color);
+}
+
+.voter-access-border-color {
+	border-color: var(--voter-access-color);
+}
+
+.human-trafficking-text-color {
+	color: var(--human-trafficking-color);
+}
+
+.human-trafficking-border-color {
+	border-color: var(--human-trafficking-color);
+}
+
+.racial-injustice-text-color {
+	color: var(--racial-injustice-color);
+}
+
+.racial-injustice-border-color {
+	border-color: var(--racial-injustice-color);
+}
+
+
+
+
+
+
